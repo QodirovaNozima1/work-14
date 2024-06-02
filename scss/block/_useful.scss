@@ -1,0 +1,40 @@
+.useful{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__box{
+        width: 100%;
+        height: 460px;
+        background: url(../assets/back.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        @media (max-width:600px) {
+            background: none;
+            height: 250px;
+        }
+    }
+    &__corner{
+        width: 70%;
+        height: 459px;
+        background: rgba(11, 117, 114, 1);
+        transform: skew(40deg,0) translateX(-260px);
+        @media (max-width:600px) {
+            background: none;
+            height: 200px;
+        }
+    }
+    &__title{
+        margin-top: -350px;
+        padding-left: 60px;
+        font-size: 40px;
+        color: #fff;
+       width: 150px;
+       position: relative;
+       @media (max-width:600px) {
+            margin-top: -30px;
+            color: #000;
+            font-size: 24px;
+            width: 100%;
+       }
+    }
+}

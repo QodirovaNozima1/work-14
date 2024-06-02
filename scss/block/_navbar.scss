@@ -1,0 +1,70 @@
+.navbar{
+    border: 1px solid  red;
+    height: 70px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        font-size: 24px;
+        font-weight: 500;
+        color: $bg-content;
+        &:hover{
+            color:rgb(9, 181, 9);
+        }
+    }
+    &__collection{
+        display: flex;
+        gap: 50px;
+    }
+    &__item{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.5px;
+        color: $bg-content;
+        &:hover{
+            color:rgb(9, 181, 9);
+        }
+    }
+    .show{
+        left: 0;
+        margin-right: 10px;
+    }
+    &__menu{
+        display: none;
+        @media (max-width: 500px) {
+            display: block;
+        }
+        span{
+            display: block;
+            width: 30px;
+            height: 3px;
+            background:$bg-text;
+            margin-bottom:6px;
+            border-radius: 6px;
+        }
+    }
+    .fromTop{
+        transform: translateY(-40px);
+        opacity: 0;
+        animation: fromTop .35s ease-in  .3s forwards;
+    }
+    @keyframes fromTop{
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+
+@media (max-width:990px){
+    .navbar{
+        &__collection{
+            display: none;
+        }
+        &__menu{
+            display: block;
+            font-size: 14px;
+        }
+    }
+}
