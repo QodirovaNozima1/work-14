@@ -1,5 +1,13 @@
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #ffffffb9;
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(6px);
+}
 .navbar{
-    border: 1px solid  red;
     height: 70px;
     padding-top: 25px;
     display: flex;
